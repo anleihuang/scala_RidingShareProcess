@@ -1,0 +1,13 @@
+# InteilliJ
+.idea/
+*.iml
+out
+
+# scala
+target
+project/project/
+project/target/
+*.class
+
+# macOs
+.DS_Store
