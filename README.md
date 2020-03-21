@@ -4,7 +4,7 @@
 In order to get know more about the customers and to evalulate the impact of any implemented strategies, the first step is to understand how many new users register and among them, how many return at a later days. In other words, conduct the retention analysis is the first priority.
 
 The concept of the retention rate is through comparing the number of the customers that remains at the end of the time period to the number of customers that exists at the beginning of the time period. For example, on December 26th, there are 5 customers, the next day (December 27th), 3 customer are remained (#1, #2 and #3), lost 2 customers are lost (#4 and #5) and there is 1 new customer (#6), the 1-Day retention rate for December 26th is 60% (3/5).
-<img src="https://github.com/anleihuang/scala_RidingShareProcess/blob/master/docs/crr_example.png"  width="400" height="300">
+<img src="https://github.com/anleihuang/scala_RidingShareProcess/blob/master/docs/crr_example.png"  width="500" height="300">
 
 More details about the retention analysis and the explanation can be found in the article [Calculate and Improve Customer Retention Rate](https://www.salesforce.com/products/service-cloud/best-practices/customer-retention-rate/)
 
@@ -19,7 +19,7 @@ In the project, we care about how many customers are back the next day, in three
 ## Architecture
 The full end-to-end ETL pipeline is designed on Google Cloud Platform which reads files from Google Cloud Storage, processes the data in Apache Spark and loads the processed results to Google Big Query. Apache Airflow is used to schedule the workflow on a daily basis.
 
-<img src="https://github.com/anleihuang/scala_RidingShareProcess/blob/master/docs/infra.png"  width="600" height="400">
+<img src="https://github.com/anleihuang/scala_RidingShareProcess/blob/master/docs/infra.png"  width="600" height="300">
 
 ## Testing
 Open a terminal and go to the repo folder (i.e. `cd /path/to/scala_RidingShareProcess`), run `sbt test`. It will run all the tests defined under `src/test/scala/`
